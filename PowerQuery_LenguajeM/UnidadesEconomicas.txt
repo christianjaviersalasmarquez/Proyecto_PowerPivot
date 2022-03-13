@@ -15,6 +15,6 @@ let
     #"Valor reemplazado3" = Table.ReplaceValue(#"Tipo cambiado2",null,0,Replacer.ReplaceValue,{"g_anoini"}),
     #"Tipo cambiado3" = Table.TransformColumnTypes(#"Valor reemplazado3",{{"g_anoini", Int64.Type}}),
     #"Valor reemplazado4" = Table.ReplaceValue(#"Tipo cambiado3",null,0,Replacer.ReplaceValue,{"m_c_s"}),
-    #"Tipo cambiado4" = Table.TransformColumnTypes(#"Valor reemplazado4",{{"g_energ", type number}})
+    #"Tipo cambiado4" = Table.TransformColumnTypes(#"Valor reemplazado4",{{"g_energ", type number}, {"s6p3_1", type number}, {"z6p4_1_1", type number}, {"z6p4_1_2", type number}, {"z6p4_2", type number}, {"z6p4_3", type number}, {"z6p4_4_1", type number}, {"z6p4_4_2", type number}, {"s6p8_1", type number}, {"s6p9_1", type number}, {"s6p10_1", type number}})
 in
     #"Tipo cambiado4"
